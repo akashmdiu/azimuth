@@ -35,7 +35,6 @@ image=page.image
 
       <div class="col-12 col-lg-8">
 
-<<<<<<< HEAD
         <div class="row infinite-scroll-posts opacity">
           {% for post in site.posts %}
           <div
@@ -52,23 +51,6 @@ image=page.image
             show_read_more=false
             %}
           </div>
-=======
-        <div class="row">
-          {% for post in site.posts %}
-            <div class="col-12 mb-3 mb-md-5">
-              {% include cards/card.html
-                style="row"
-                date=post.date
-                title=post.title
-                description=post.description 
-                thumbnail=post.thumbnail 
-                url=post.url
-                authors=post.authors
-                categories=post.categories
-                show_read_more=false
-              %}
-            </div>
->>>>>>> 587bbf18485f8e1af5d0bb6519cfc735798b4f32
           {% endfor %}
         </div>
 
