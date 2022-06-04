@@ -75,7 +75,7 @@ image=page.image
           $('.delete-element').remove();
           $('.infinite-scroll-posts').removeClass('opacity');
 
-          let per_page = {{ paginator.per_page }};
+          let per_page = '{{ paginator.per_page }}';
 
           if (myNodelist.length <= per_page) {
             $('.loadmore-btn').remove();
