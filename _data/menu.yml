@@ -1,0 +1,67 @@
+main:
+  - name: Capabilities
+    url: /capabilities/
+    weight: 1
+    child:
+      - name: "Full Stack Data Science"
+        url: /capabilities/full-stack-data-science
+      - name: "Geospatial Analytics"
+        url: /capabilities/geospatial-analytics
+      - name: "Analytical Application Development"
+        url: /capabilities/analytical-application-development
+      - name: "Intelligence Analysis"
+        url: /capabilities/intelligence-analysis
+      - name: "Mission Support"
+        url: /capabilities/mission-support
+  - name: Customers
+    url: /customers/
+    weight: 2
+    child:
+      - name: "DOD"
+        url: /capabilities/dod
+      - name: "Intelligence"
+        url: /capabilities/intelligence-analysis
+      - name: "Federal Civilian"
+        url: /capabilities/federal-civilian
+      - name: "Commercial"
+        url: /capabilities/commercial
+  - name: Contracts
+    url: /contracts
+    weight: 3
+  - name: Blog
+    url: /blog
+    weight: 4
+  - name: About
+    url: /about
+    weight: 5
+footer_primary:
+  - name: Home
+    url: /
+    weight: 1
+  - name: Capabilities
+    url: /capabilities
+    weight: 2
+  - name: Projects
+    url: /projects
+    weight: 3
+  - name: Team
+    url: /team
+    weight: 4
+footer_secondary:
+  - name: Blog
+    url: /blog
+    weight: 1
+  - name: About
+    url: /about
+    weight: 2
+footer_tertiary:
+  - name: Contact
+    url: /contact
+    weight: 1
+bottom:
+  - name: Privacy Policy
+    url: /privacy-policy
+    weight: 3
+  - name: Terms and Conditions
+    url: /terms-and-conditions
+    weight: 4
