@@ -38,7 +38,7 @@ image=page.image
         <div class="row infinite-scroll-posts opacity">
           {% for post in site.posts %}
           <div
-            class="col-12 mb-3 mb-md-5 make-node-list{% if forloop.index > paginator.per_page %} delete-element {% endif %}">
+            class="col-12 mb-3 mb-md-5 make-node-list{% if forloop.index > 5 %} delete-element{% endif %}">
             {% include cards/card.html
             style="row"
             date=post.date
@@ -72,10 +72,11 @@ image=page.image
         <script>
 
           let myNodelist = $(".make-node-list");
+
           $('.delete-element').remove();
           $('.infinite-scroll-posts').removeClass('opacity');
 
-          let per_page = '{{ paginator.per_page }}';
+          let per_page = 5;
 
           if (myNodelist.length <= per_page) {
             $('.loadmore-btn').remove();
